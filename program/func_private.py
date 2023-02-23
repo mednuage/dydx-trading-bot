@@ -9,8 +9,8 @@ from pprint import pprint
 # Get existing open positions
 def is_open_positions(client, market):
 
-  # Protect API : Si l'APOI se déclenche trop fréquemment, elle risque d'être bloquée par DyDx
-  time.sleep(0.5)
+  # Protect API
+  time.sleep(0.2)
 
   # Get positions
   all_positions = client.private.get_positions(
@@ -42,7 +42,7 @@ def place_market_order(client, market, side, size, price, reduce_only):
 
   # Get expiration time
   server_time = client.public.get_time()
-  expiration = datetime.fromisoformat(server_time.data["iso"].replace("Z", "")) + timedelta(seconds=3670) # A la base il s'agit de 70 s mais il y a une diféfrence de fuseaux horaire et j'ajoute 1h
+  expiration = datetime.fromisoformat(server_time.data["iso"].replace("Z", "")) + timedelta(seconds=70)
 
   # Place an order
   placed_order = client.private.create_order(
@@ -101,9 +101,9 @@ def abort_all_positions(client):
 
       # Get Price
       price = float(position["entryPrice"])
-      accept_price = price * 1.7 if side == "BUY" else price * 0.3 # Pour avoir la certitude que l'ordre s'exécute
+      accept_price = price * 1.7 if side == "BUY" else price * 0.3
       tick_size = markets["markets"][market]["tickSize"]
-      accept_price = format_number(accept_price, tick_size) # Pour respecter le nombre de décimaux attendu pour chaque actif
+      accept_price = format_number(accept_price, tick_size)
 
       # Place order to close
       order = place_market_order(

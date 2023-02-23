@@ -10,7 +10,10 @@ ABORT_ALL_POSITIONS = False
 
 # Find cointegrated pairs
 
-FIND_COINTEGRATED = True
+FIND_COINTEGRATED = False
+
+# Place Trades
+MANAGE_EXISTS = True
 
 # Place Trades
 PLACE_TRADES = True

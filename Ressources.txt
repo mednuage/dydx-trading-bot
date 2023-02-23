@@ -1,0 +1,152 @@
+
+Alchemy HTTP Provider :
+
+DYDX Testent Application :
+
+API KEY : 50boc9BBgwF9-Y4SNaJNnEJau8P0OgbA
+HTTPS : https://eth-goerli.g.alchemy.com/v2/50boc9BBgwF9-Y4SNaJNnEJau8P0OgbA
+
+https://goerlifaucet.com
+
+DYDX Mainet Application :
+
+API KEY : Oe1_tdwB3ySsO3GF0xDu37-jdAicCKkP
+HTTPS: https://eth-mainnet.g.alchemy.com/v2/Oe1_tdwB3ySsO3GF0xDu37-jdAicCKkP
+
+======= Testnet STARK KEY PAIRS ========
+
+0x96478F27cB3172e60C151f21D3AC11f3f35C6411
+: 
+{walletAddress: "0x96478F27cB3172e60C151f21D3AC11f3f35C6411",…}
+legacySigning
+: 
+false
+privateKey
+: 
+"07acc1aeca35a810408727f3b730e49c299162d1b29c6addab8fb3faa90c358f"
+publicKey
+: 
+"005656348654ee93f98433ae86b8601ac7a33963833cf901726ec5a023846404"
+publicKeyYCoordinate
+: 
+"0341933e798a1d2a6d3d9c46f67488d597d2b18f4e32fba2309f7327b125375c"
+walletAddress
+: 
+"0x96478F27cB3172e60C151f21D3AC11f3f35C6411"
+walletType
+: 
+"METAMASK"
+
+======= Testnet API KEY PAIRS ========
+0x96478F27cB3172e60C151f21D3AC11f3f35C6411
+: 
+{walletAddress: "0x96478F27cB3172e60C151f21D3AC11f3f35C6411",…}
+key
+: 
+"708ac2b5-2a4c-c1d9-899b-413fc08d4f7e"
+legacySigning
+: 
+false
+passphrase
+: 
+"ZqsLLzQmrcAWGKwpxQSv"
+secret
+: 
+"GlcgVrcfJUfjxE0RxaIiTw0CE0nzu1nUVma8aQVu"
+walletAddress
+: 
+"0x96478F27cB3172e60C151f21D3AC11f3f35C6411"
+walletType
+: 
+"METAMASK"
+
+============
+RESOURCES
+DISCLAIMER:
+
+By using the code, material, education or any content of any nature from this course, you are accepting full responsibility for your trading results. We solely use and advise to use Testnet (non-real) funds for testing our bot. That said, if you partake in this course and trade with real assets, you are accepting to do so at your own risk. Trading is risky, especially in Crypto. Please take care.
+
+
+
+Discord:
+
+https://discord.gg/kG4aCx56xA
+
+
+
+GitHub Full Bot:
+
+https://github.com/CryptoWizardsNet/dydx-trading-bot.git
+
+
+
+Kelly Criterion:
+
+https://www.youtube.com/results?search_query=kelly+criterion+crypto+wizards
+
+
+
+Google Colab DYDX Example:
+
+https://colab.research.google.com/drive/14B_0khx0GOApiUYnEq-cJqYpIWDnqtsv?usp=sharing
+
+
+
+DYDX API Documentation:
+
+https://dydxprotocol.github.io/v3-teacher/#terms-of-service-and-privacy-policy
+
+
+
+Useful Blog for Obtaining DYDX API Keys:
+
+https://docs.hummingbot.org/exchanges/dydx-perpetual/#connection
+
+
+
+Goerli Testnet Transaction Viewer:
+
+https://goerli.etherscan.io/tx/0x3e80b5dd5d47f6324e8ecd14f0306440023a63b41c2199f7d0d2db70ba1b9da9
+
+
+
+DYDX Python Examples: 
+
+https://github.com/dydxprotocol/dydx-v3-python/blob/master/examples/orders.py
+
+
+
+Calculation of Half Life in Python
+
+https://www.pythonforfinance.net/2016/05/09/python-backtesting-mean-reversion-part-2/
+
+
+
+Telegram URL
+
+https://api.telegram.org/bot{bot_token}/sendMessage?chat_id={chat_id}&text={message}
+
+
+
+CRON:
+
+https://crontab.guru/
+
+crontab -e
+
+0 12 * * * /bin/timeout -s 2 86330 python3 dydx_bot/program/main.py > output.txt  2>&1
+
+*/5 * * * * /bin/timeout -s 2 290 python3 dydx_bot/program/main.py > output.txt  2>&1
+
+crontab -l
+
+
+
+https://github.com/CryptoWizardsNet/dydx-trading-bot.git
+
+Full Code from Course Attached and Above on GitHub
+
+==========
+
+Kelly criterion for position sizing : https://www.youtube.com/watch?v=1v5LHDPFKhQ
+
